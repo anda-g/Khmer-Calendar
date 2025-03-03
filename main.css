@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  font-family: "Kantumruy Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #e8f6e9;
+  height: 100vh;
+}
+
+/* Style header */
+
+header {
+  height: 5%;
+  display: flex;
+  padding: 20px 56px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style main */
+
+main {
+  height: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0px 56px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(213, 212, 212, 0.5);
+}
+
+/* Table */
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1.5px solid #f0f0f0;
+}
+
+th {
+  width: 10%;
+  padding: 20px;
+  background-color: #15b200;
+  border-top: 0px;
+  color: #ffffff;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+  border-left: 0px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
+  border-right: 0px;
+}
+
+td {
+  height: 14.5%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+td span:first-child {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+td span:last-child {
+  font-size: 0.8rem;
+}
+
+td:not(.other-month):hover {
+  background-color: #e8f6e9;
+  cursor: pointer;
+}
+
+img {
+  width: 12px;
+}
+
+.other-month {
+  opacity: 0.5;
+  background-color: #f0f0f0;
+}
+
+.holiday {
+  color: #fe101c;
+}
+
+.event-day {
+  color: #2a27fd;
+}
+
+/* End table */
+
+/* Style Event */
+
+section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+section > h2 {
+  padding: 20px;
+}
+
+section > ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+section > ul > li {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  height: 8%;
+  box-shadow: 0px 0px 10px 0px rgba(213, 212, 212, 0.5);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+section > ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.li-holiday {
+  border-left: 3px solid #fe101c;
+}
+
+section > ul > li:not(.li-holiday) {
+  border-left: 3px solid #2a27fd;
+}
+
+/* End Event */
+
+/* Style footer */
+
+footer {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* A Little Responsive */
+
+@media (max-width: 1088px) {
+  table {
+    width: 100%;
+    height: 80vh;
+  }
+  th {
+    width: 14.28%;
+  }
+  main {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  section {
+    width: 100%;
+    height: auto;
+  }
+
+  section h2 {
+    padding: 20px 0px;
+  }
+  section ul {
+    padding: 0px;
+  }
+}
